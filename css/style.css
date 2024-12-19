@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+nav{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/Logo/Back.png);
+}
+.logo{
+    width: 100%;
+    height: 70%;
+}
+.logo a img{
+    width: auto;
+    height: 65%;
+    margin: 30px;
+}
+/* Estilo general de la barra de navegación */
+.navbar {
+    width: 100%;
+    height: 30%;
+    background-color: #004080; /* Azul oscuro */
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: block;
+  }
+  
+  /* Estilo para los elementos principales */
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    position: relative;
+    margin-right: 20px;
+
+  }
+  
+  .menu > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s ease;
+    margin: 10px;
+  }
+  
+  .menu > li > a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los submenús */
+  .has-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block; /* Mostrar al pasar el cursor */
+  }
+  
+  .dropdown li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #0056b3; /* Azul más claro */
+    border-radius: 5px;
+  }
+
+
+/* Asegura que el contenedor ocupe toda la pantalla */
+.presentation {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    /*height: 100vh;*/ /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+  }
+  
+  /* Estilo para el texto */
+  /*.nombre {
+    position: absolute;
+  }*/
+  
+  .nombre_cajita h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3rem; /* Tamaño del texto */
+    color: aqua; /* Color del texto */
+    margin-left: -300px;
+  }
+  
+  /* Centrado de la imagen */
+  .presentation-foto img {
+    width: 90%; /* Asegura que la imagen no se desborde */
+    /*max-height: 70vh;*/ /* Limita la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+
+
+  /* Contenedor principal */
+.sucursales {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todos los elementos */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 70px;
+  }
+  
+  /* Estilo de la galería */
+  .box {
+    display: flex;
+    gap: 0px; /* Espaciado entre las imágenes */
+    justify-content: center; /* Centra horizontalmente la galería */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si la pantalla es pequeña */
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(208, 227, 255);
+  }
+  
+  /* Cada imagen en la galería */
+.imgen_sucursal{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 0px; /* Espaciado entre las imágenes */
+    justify-content: center; /* Centra horizontalmente la galería */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si la pantalla es pequeña */
+    
+}
+
+  .imgen_sucursal img {
+    width: 285px; /* Tamaño máximo de cada imagen */
+    height: auto; /* Altura máxima */
+    object-fit: cover; /* Recorta proporcionalmente para llenar el espacio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Sombra suave */
+  }
+  
+  .titulo {
+    width: 60%;
+    display: inline-block; /* Para limitar el área del efecto */
+    text-align: center;
+    /*padding: 10px 20px;*/ /* Espaciado interno */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #f0f0f0; /* Fondo del div */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    margin-top: 10px;
+  }
+  
+  /* Efecto al pasar el cursor */
+  .titulo:hover {
+    transform: translateY(-5px); /* Mueve ligeramente hacia arriba */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  }
+  
+  /* Estilo del enlace */
+  .titulo a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+  }
+  
+  .titulo a:hover {
+    color: #555; /* Cambia el color del texto al pasar el cursor */
+  }
+  .imgen_sucursal h1{
+    background-color: #0056b3;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  /* Estilo de la descripción */
+  .Descripcion_sucursal{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todos los elementos */
+    text-align: center; 
+  }
+  .Descripcion_sucursal h5 {
+    width: 50%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0;
+  }
+
+/* Estilos del carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #363636;
+    padding: 20px 0;
+  }
+  
+  /* Pista de desplazamiento */
+  .carousel-track {
+    display: flex;
+    align-items: center; /* Centra verticalmente las imágenes */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    animation: scroll 10s linear infinite;
+  }
+  
+  /* Estilos para los elementos individuales */
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    margin: 0 100px; /* Espaciado entre imágenes */
+  }
+  
+  .carousel-item a img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover para enlaces con imágenes */
+  .carousel-item a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animación del desplazamiento */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Pausa la animación al pasar el mouse */
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+  
+  /* Productos */
+  /* Contenedor principal de la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+  }
+  
+  /* Elementos individuales de la galería */
+  .gallery_item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Enlaces dentro de cada ítem */
+  .gallery_item a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imágenes de la galería */
+  .gallery_item img {
+    max-width: 100%;
+    height: 450px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Ajustar imagen dentro del marco */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Nombre del producto */
+  .gallery_item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Efectos al pasar el cursor */
+  .gallery_item:hover {
+    transform: translateY(-5px); /* Elevar ligeramente el ítem */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumentar sombra */
+  }
+  
+  .gallery_item:hover img {
+    transform: scale(1.05); /* Incrementar ligeramente el tamaño de la imagen */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumentar sombra */
+  }
+  
