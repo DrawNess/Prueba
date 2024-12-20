@@ -7,68 +7,68 @@
     <title>Gemmatex</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="">
-                <img src="./img/Logo/Logo gemmatex.png" alt="Logo_Gemmatex">
-            </a>
-        </div>
-        <div class="navbar">
-            <ul class="menu">
-              <li>
-                <a>EPSON</a>
-              </li>
-              <li class="has-dropdown">
-                <a>SUBLIMACIÓN</a>
-                <ul class="dropdown">
-                  <li><a>Planchas (Fresub, Gx)</a></li>
-                  <li><a>Tintes</a></li>
-                  <li><a>Insumos</a></li>
-                </ul>
-              </li>
-              <li class="has-dropdown">
-                <a>SERIGRAFÍA</a>
-                <ul class="dropdown">
-                  <li><a>Quitexa</a></li>
-                  <li><a>Hagabe</a></li>
-                  <li><a>Genesis</a></li>
-                </ul>
-              </li>
-              <li>
-                <a>DTF</a>
-              </li>
-              <li>
-                <a>VINIL TEXTIL</a>
-              </li>
-              <li>
-                <a>PLOTTERS DE CORTE</a>
-              </li>
-              <li>
-                <a>OTROS</a>
-              </li>
-            </ul>
-        </div>
-          
-    </nav>
-    <section class="presentation">
-      <div class="presentation-slider">
-        <div class="slide">
-          <img src="/img/Presentacion/Presentacion 1.jpg" alt="Imagen 1">
-        </div>
-        <div class="slide">
-          <img src="/img/Presentacion/Presentacion 2.jpg"" alt="Imagen 2">
-        </div>
-        <div class="slide">
-          <img src="/img/Presentacion/Presentacion 3.jpg"" alt="Imagen 3">
-        </div>
-        <div class="slide">
-          <img src="/img/Presentacion/Presentacion 4.jpg" alt="Imagen 4">
-        </div>
-        <div class="slide">
-          <img src="/img/Presentacion/Presentacion 5.jpg" alt="Imagen 5">
-        </div>
+  <nav class="sticky-nav">
+    <div class="logo">
+      <a href="">
+        <img src="./img/Logo/Logo gemmatex.png" alt="Logo_Gemmatex">
+      </a>
+    </div>
+    
+    <div class="navbar" id="navbar">
+      <ul class="menu">
+        <li><a>EPSON</a></li>
+        <li class="has-dropdown">
+          <a>SUBLIMACIÓN</a>
+          <ul class="dropdown">
+            <li><a>Planchas (Fresub, Gx)</a></li>
+            <li><a>Tintes</a></li>
+            <li><a>Insumos</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a>SERIGRAFÍA</a>
+          <ul class="dropdown">
+            <li><a>Quitexa</a></li>
+            <li><a>Hagabe</a></li>
+            <li><a>Genesis</a></li>
+          </ul>
+        </li>
+        <li><a>DTF</a></li>
+        <li><a>VINIL TEXTIL</a></li>
+        <li><a>PLOTTERS DE CORTE</a></li>
+        <li><a>OTROS</a></li>
+        
+      </ul>
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+    </div>
+    
+  </nav>
+  <script src="/js/navbar.js"></script>
+  
+  <section class="presentation">
+    <div class="presentation-slider">
+      <div class="slide">
+        <img src="/img/Presentacion/Presentacion 1.jpg" alt="Imagen 1">
       </div>
-    </section>
+      <div class="slide">
+        <img src="/img/Presentacion/Presentacion 2.jpg" alt="Imagen 2">
+      </div>
+      <div class="slide">
+        <img src="/img/Presentacion/Presentacion 3.jpg" alt="Imagen 3">
+      </div>
+      <div class="slide">
+        <img src="/img/Presentacion/Presentacion 4.jpg" alt="Imagen 4">
+      </div>
+      <div class="slide">
+        <img src="/img/Presentacion/Presentacion 5.jpg" alt="Imagen 5">
+      </div>
+    </div>
+    <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
+  </section>
+  <script src="/js/slide.js"></script>
 
     <section class="sucursales">
         <div class="box">
@@ -170,11 +170,31 @@
 
       <footer>
         <div class="footer_box">
+            <ul>
+              <li><a href="">Titulo 1</a></li>
+              <li><a href="">Titulo 2</a></li>
+              <li><a href="">Titulo 3</a></li>
+              <li><a href="">Titulo 4</a></li>
+              <li><a href="">Titulo 5</a></li>
+            </ul>
+        </div>
+        <div class="footer_box">
             <h5>
-                
+              titulo 1  
+            </h5>
+        </div>
+        <div class="footer_box">
+            <h5>
+              titulo 1  
+            </h5>
+        </div>
+        <div class="footer_box">
+            <h5>
+              titulo 1  
             </h5>
         </div>
       </footer>
+
       
       
       
