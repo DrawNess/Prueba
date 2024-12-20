@@ -21,7 +21,7 @@ nav{
 }
 .logo a img{
     width: auto;
-    height: 90px;
+    height: 80px;
     margin: 30px;
 }
 @media (max-width: 768px) {
@@ -30,8 +30,9 @@ nav{
     height: 70%;
   }
   .logo a img{
-      width: 60%;
-      height: auto;  
+      width: auto;
+      height: 20px;
+      margin: 30px;
   }
 }
 /* Estilo general de la barra de navegación */
@@ -136,6 +137,7 @@ nav{
       display: block;
       margin-right: 50px;
     }
+
   }
 
 
