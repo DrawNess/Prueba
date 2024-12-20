@@ -182,7 +182,15 @@ nav{
 .nav:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+@media (max-width: 768px) {
+  .slide img {
+    width: 95%;
+    padding-top: 20px;
+  }
+  .nav{
+    top: 60%;
+  }
+}
 
   
   /* Estilo para el texto */
@@ -399,4 +407,78 @@ nav{
     transform: scale(1.05); /* Incrementar ligeramente el tamaño de la imagen */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumentar sombra */
   }
-  /*producto beneficio desventajas y costo*/
+
+
+ /* Footer */
+footer {
+  width: 100%;
+  background-color: #0056b3;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_box {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Footer Info */
+.footer_info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer_title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.footer_title.collapsed::after {
+  transform: rotate(180deg);
+}
+
+.footer_info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+.footer_info img{
+  margin-top: 20px;
+}
+.footer_info a img{
+  width: 250px;
+}
+.footer_info ul.collapsed {
+  display: none;
+}
+.footer_info li {
+  margin-bottom: 5px;
+}
+.footer_info a,
+.footer_info img {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.footer_info img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .footer_box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_info {
+    text-align: center;
+  }
+}
