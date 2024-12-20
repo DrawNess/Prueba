@@ -28,6 +28,7 @@ nav{
     font-family: Arial, sans-serif;
     font-weight: bold;
     display: block;
+    z-index: 100;
   }
   
   /* Estilo para los elementos principales */
